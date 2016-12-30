@@ -17,5 +17,6 @@ def page(request):
             post.save()
 
     else:
+
         img = UploadForm(request.POST or None)
-    return render(request, 'imagebin\page.html',{'form':img})
+    return render(request, 'imagebin/page.html',{'form':img})
